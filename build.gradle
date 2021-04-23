@@ -1,6 +1,7 @@
 buildscript {
     repositories {
-        mavenCentral()
+        //mavenCentral()
+        maven { url "https://repo1.maven.org/maven2/" }
     }
     dependencies {
         classpath 'eu.appsatori:gradle-fatjar-plugin:0.2-rc1'
@@ -18,7 +19,8 @@ targetCompatibility = '1.6'
 sourceCompatibility = '1.6'
 
 repositories {
-    mavenCentral()
+    //mavenCentral()
+    maven { url "https://repo1.maven.org/maven2/" }
 }
 
 jar {
