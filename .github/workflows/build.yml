@@ -41,8 +41,6 @@ jobs:
                   filesmaven.key = "publish_key"
                   }
               run: echo "${MAVENCI}" > publish_key && echo "${INIT}" > init.gradle
-            - name: init.gradle
-              run:
             - name: Gradle uploadArchives
               run: ./gradlew --init-script init.gradle uploadArchives
             - name: cleanup
